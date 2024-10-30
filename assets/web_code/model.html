@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./node_modules/three/build/three.module.js",
+          "controls": "./node_modules/three/examples/jsm/controls/OrbitControls.js",
+          "pathfinding": "./node_modules/three-pathfinding/src/Pathfinding.js",
+          "loader": "./node_modules/three/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="leftPanel">
+        <button class="areaButton" id="inspectionArea_cam">Inspection Area</button>
+        <button class="areaButton" id="stagingArea_cam">Staging Area</button>
+        <button class="areaButton" id="activityArea_cam">Activity Area</button>
+        <button class="areaButton" id="receivingArea_cam">Receiving Area</button>
+        <button class="areaButton" id="storageArea_cam">Storage Area</button>
+        <button class="areaButton" id="yardArea_cam">Yard Area</button>
+        <button id="togglePanel">&#x25B6;</button>
+        <!-- Chevron right symbol -->
+        <div id="toggleTooltip">Open Controls</div>
+      </div>
+    </div>
+    <div id="tooltip" style="display: none">Tooltip Data</div>
+    <button id="nav-cam-button">switch to nav cam</button>
+    <script type="module" src="./model.js"></script>
+  </body>
+</html>

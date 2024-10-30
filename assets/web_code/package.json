@@ -1,0 +1,18 @@
+{
+  "name": "web_code",
+  "version": "1.0.0",
+  "main": "model.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "three": "^0.169.0",
+    "three-pathfinding": "^1.3.0"
+  }
+}
